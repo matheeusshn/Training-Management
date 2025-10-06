@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e271b2afc3dc7610063ffacc050131ef" label="Schedule" max_length="40" name="x_1793782_traini_0_schedule" type="collection">
+        <element label="Training Date" max_length="40" name="training_date" type="glide_date"/>
+        <element label="Max Vacancies" max_length="40" name="max_vacancies" type="integer"/>
+        <element label="Course" max_length="32" name="course" reference="x_1793782_traini_0_course" type="reference"/>
+        <element label="Short Description" max_length="255" name="short_description" type="string"/>
+        <element label="Instructor" max_length="32" name="instructor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Current Enrollments" max_length="40" name="current_enrollments" type="integer"/>
+        <element choice="3" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Full" sequence="3" value="7"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="course"/>
+        </index>
+        <index name="index2">
+            <element name="instructor"/>
+        </index>
+    </element>
+</database>
