@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1793782_traini_0.ScheduleChecker</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ScheduleChecker</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ScheduleChecker = Class.create();
+ScheduleChecker.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    checkDuplicateDate: function() {
+        var date = this.getParameter('sysparm_date');
+        var course = this.getParameter('sysparm_course');
+        var gr = new GlideRecord("x_1793782_traini_0_schedule");
+        gr.addQuery('training_date', 'ON', date);
+        gr.addQuery('course', course);
+        gr.query();
+
+        if (gr.next()) {
+            return 'true';
+        }
+
+        return 'false';
+    },
+    type: 'ScheduleChecker'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 21:03:41</sys_created_on>
+        <sys_id>52dc9037c318b610063ffacc05013171</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ScheduleChecker</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_update_name>sys_script_include_52dc9037c318b610063ffacc05013171</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-06 21:10:36</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>52dc9037c318b610063ffacc05013171</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 21:03:41</sys_created_on>
+        <sys_id>f2ad9037c318b610063ffacc05013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-06 21:03:41</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

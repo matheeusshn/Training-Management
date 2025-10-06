@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Duplicate Schedule</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var trainingDate = g_form.getValue('training_date');
+    var courseName = g_form.getValue('course');
+
+    var ga = new GlideAjax('ScheduleChecker');
+    ga.addParam('sysparm_name', 'checkDuplicateDate');
+    ga.addParam('sysparm_date', trainingDate);
+    ga.addParam('sysparm_course', courseName);
+    ga.getXMLAnswer(function(response) {
+        if (response === 'true') {
+            g_form.addErrorMessage('This course is already scheduled on this date.');
+            g_form.setValue('training_date', '');
+        } else {
+            g_form.clearMessages();
+        }
+    });
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 14:58:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b9f8072fc350b610063ffacc05013114</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Duplicate Schedule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_update_name>sys_script_client_b9f8072fc350b610063ffacc05013114</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-06 20:56:58</sys_updated_on>
+        <table>x_1793782_traini_0_schedule</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</application>
+        <file_path/>
+        <instance_id>1ddc8f911b0a02507d9d2f8dee4bcb55</instance_id>
+        <instance_name>dev265349</instance_name>
+        <name>sys_script_client_b9f8072fc350b610063ffacc05013114</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Duplicate Schedule&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var trainingDate = g_form.getValue('training_date');
+    var courseName = g_form.getValue('course');
+
+    var ga = new GlideAjax('ScheduleChecker');
+    ga.addParam('sysparm_name', 'checkDuplicateDate');
+    ga.addParam('sysparm_date', trainingDate);
+    ga.addParam('sysparm_course', courseName);
+    ga.getXMLAnswer(function(response) {
+        if (response === 'true') {
+            g_form.addErrorMessage('This course is already scheduled on this date.');
+            g_form.setValue('training_date', '');
+        } else {
+            g_form.clearMessages();
+        }
+    });
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-10-06 14:58:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b9f8072fc350b610063ffacc05013114&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Duplicate Schedule&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Training Management" source="x_1793782_traini_0"&gt;277e6aabc3dc7610063ffacc0501311e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Management"&gt;277e6aabc3dc7610063ffacc0501311e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b9f8072fc350b610063ffacc05013114&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-10-06 20:56:58&lt;/sys_updated_on&gt;&lt;table&gt;x_1793782_traini_0_schedule&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-480755436</payload_hash>
+        <record_name>Duplicate Schedule</record_name>
+        <reverted_from/>
+        <source>341143a3c350b610063ffacc0501313e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 20:56:58</sys_created_on>
+        <sys_id>e02c9473c318b610063ffacc050131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199bb502e3b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-06 20:56:58</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>682c94737c18b6105b6d76f00f2012f2</update_guid>
+        <update_guid_history>682c94737c18b6105b6d76f00f2012f2:-480755436,f4b7e3a30114b61042ed1764f8118384:2113885988,c6572f631614b610a88a28f97dd4410c:-541632581,89c623239414b6103b92120d9d1a9689:2113885988,5aa5ebef25d0b61085ec0198b5546321:-2143089780,0f6527ef57d0b6105d1a32b1ddbc3c3c:-1872057428,2f256feb3ad0b61019f3a8d79856043d:1388276729,d39f87276890b610aad96a3c667069cb:564833897,6d3a0fab3e50b6107b0d815ef11563a5:322067292,0f2a4b6f8150b610f20389abb4cc81f6:-2058666859</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 21:00:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>2ea4ed905c6f48fa8e8931bfab2f1904</sys_id>
+        <sys_metadata>b9f8072fc350b610063ffacc05013114</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Duplicate Schedule</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_parent display_value="Schedule">e271b2afc3dc7610063ffacc050131ef</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_scope_delete display_value="">3bf39d40fbb5444c9b261415aacb2290</sys_scope_delete>
+        <sys_update_name>sys_script_client_b9f8072fc350b610063ffacc05013114</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b9f8072fc350b610063ffacc05013114">e02c9473c318b610063ffacc050131f3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-06 21:00:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

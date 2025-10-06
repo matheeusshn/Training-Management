@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Training Enrollment">24ddafabc314b610063ffacc050131c2</sc_cat_item>
+        <sc_category display_value="Training">328eafebc314b610063ffacc050131f6</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-06 17:38:09</sys_created_on>
+        <sys_id>d8ae232fc314b610063ffacc050131dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Training.Training Enrollment</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_update_name>sc_cat_item_category_d8ae232fc314b610063ffacc050131dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-06 17:38:09</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>
