@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1793782_traini_0.ScheduleUtils2</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ScheduleUtils2</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ScheduleUtils2 = Class.create();
+ScheduleUtils2.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getAvailableSchedules: function() {
+        var userId = gs.getUserID();
+        var scheduleId = this.getParameter('sysparm_schedule'); // se vier via GlideAjax
+        var available = [];
+
+        var grSchedule = new GlideRecord("x_1793782_traini_0_schedule");
+        grSchedule.addQuery("state", "2"); // apenas abertos
+        if (scheduleId) {
+            grSchedule.addQuery("sys_id", scheduleId); // valida um único registro
+        }
+        grSchedule.query();
+
+        while (grSchedule.next()) {
+            var courseId        = grSchedule.course.toString();
+            var instructorId    = grSchedule.getValue('instructor') || '';
+            var trainingDateStr = grSchedule.getValue('training_date'); // campo de data correto
+            var maxVacancies    = grSchedule.max_vacancies.nil() ? 0 : parseInt(grSchedule.max_vacancies, 10);
+
+            // [10] Instrutor não pode se matricular
+            if (instructorId === userId) {
+                if (scheduleId) return 'instructor';
+                continue;
+            }
+
+            // [7] Já matriculado nesta agenda (Pending 1 / Approved 3)
+            var dup = new GlideRecord('x_1793782_traini_0_enrollment');
+            dup.addQuery('requester', userId);
+            dup.addQuery('schedule', grSchedule.sys_id);
+            dup.addQuery('state', 'IN', '1,3');
+            dup.query();
+            if (dup.hasNext()) {
+                if (scheduleId) return 'duplicate';
+                continue;
+            }
+
+            // [8] Máximo 3 matrículas no mesmo curso (Pending 1 / Approved 3)
+            var count = new GlideAggregate('x_1793782_traini_0_enrollment');
+            count.addQuery('requester', userId);
+            count.addQuery('schedule.course', courseId);
+            count.addQuery('state', 'IN', '1,3');
+            count.addAggregate('COUNT');
+            count.query();
+            if (count.next() && parseInt(count.getAggregate('COUNT'), 10) >= 3) {
+                if (scheduleId) return 'course_limit';
+                continue;
+            }
+
+            // [9] Agenda cheia (Pending 1 + Approved 3 ocupam vaga)
+            if (maxVacancies > 0) {
+                var occ = new GlideAggregate('x_1793782_traini_0_enrollment');
+                occ.addQuery('schedule', grSchedule.sys_id);
+                occ.addQuery('state', 'IN', '1,3');
+                occ.addAggregate('COUNT');
+                occ.query();
+                if (occ.next() && parseInt(occ.getAggregate('COUNT'), 10) >= maxVacancies) {
+                    if (scheduleId) return 'no_seats';
+                    continue;
+                }
+            }
+
+            // [11] Prazo: somente até um dia antes do treinamento
+            if (trainingDateStr) {
+                var trainingDate = new GlideDateTime(trainingDateStr);
+                var today = new GlideDateTime();
+                trainingDate.addDaysUTC(-1); // um dia antes
+
+                if (today.after(trainingDate)) {
+                    if (scheduleId) return 'deadline';
+                    continue;
+                }
+            }
+
+            // ✅ Agenda liberada
+            if (scheduleId)
+                return 'true';
+            available.push(grSchedule.getUniqueValue());
+        }
+
+        // Se chamada sem parâmetro → Reference Qualifier usa esta lista
+        return available.join(",");
+    },
+
+    type: 'ScheduleUtils2'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 20:20:38</sys_created_on>
+        <sys_id>215ddd40c3203a10063ffacc050131d6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ScheduleUtils2</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_update_name>sys_script_include_215ddd40c3203a10063ffacc050131d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-07 21:51:23</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>215ddd40c3203a10063ffacc050131d6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 20:20:38</sys_created_on>
+        <sys_id>4e6d1180c3203a10063ffacc05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-07 20:20:38</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
