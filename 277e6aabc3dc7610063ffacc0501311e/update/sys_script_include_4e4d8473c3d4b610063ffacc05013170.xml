@@ -13,51 +13,84 @@
 ScheduleUtils.prototype = {
     initialize: function() {},
 
-    refQualSchedule: function() {
-        var blockedNumbers = [];
-        var schedulesToBeShown = [];
+    getAvailableSchedules: function() {
+        var available = [];
+        var userId = gs.getUserID();
 
-        var grEnrollment = new GlideRecord("x_1793782_traini_0_enrollment");
-        grEnrollment.addQuery("opened_by", gs.getUserID());
-        grEnrollment.addQuery("state", "!=", "4");
-        grEnrollment.query();
+        gs.info("[ScheduleUtils] Iniciando debug para o usuário: " + userId);
 
-        while (grEnrollment.next()) {
-            var sch = grEnrollment.schedule.getRefRecord();
-            if (sch && sch.number) {
-                blockedNumbers.push(sch.number.toString());
+        // busca apenas agendas com state = 2 (open)
+        var grSchedule = new GlideRecord("x_1793782_traini_0_schedule");
+        grSchedule.addQuery("state", "2");
+        grSchedule.query();
+
+        while (grSchedule.next()) {
+            var courseId = grSchedule.course.toString();
+            var scheduleId = grSchedule.getUniqueValue();
+            var scheduleNumber = grSchedule.number;
+            var instructorId = (grSchedule.instructor + "") || "";
+
+            gs.info("[ScheduleUtils] Verificando agenda: " + scheduleNumber + " (Curso: " + courseId + ")");
+
+            // ]]>🔸<![CDATA[ regra 10: instrutor não pode se matricular na própria agenda
+            if (instructorId && instructorId === userId) {
+                gs.info("[ScheduleUtils] Usuário é o instrutor desta agenda → ignorada");
+                continue;
             }
+
+            // ]]>🔸<![CDATA[ regra 7: já matriculado nesta agenda (ignorando reproved)
+            var grEnrollCheck = new GlideRecord("x_1793782_traini_0_enrollment");
+            grEnrollCheck.addQuery("opened_by", userId);
+            grEnrollCheck.addQuery("schedule", scheduleId);
+            grEnrollCheck.addQuery("state", "NOT IN", "2");
+            grEnrollCheck.query();
+            if (grEnrollCheck.hasNext()) {
+                gs.info("[ScheduleUtils] Usuário já tem matrícula ativa nesta agenda → ignorada");
+                continue;
+            }
+
+            // ]]>🔸<![CDATA[ regra 8: no máximo 3 matrículas por curso (ignorando reproved)
+            var grEnrollCount = new GlideAggregate("x_1793782_traini_0_enrollment");
+            grEnrollCount.addQuery("opened_by", userId);
+            grEnrollCount.addQuery("schedule.course", courseId);
+            grEnrollCount.addQuery("state", "NOT IN", "2");
+            grEnrollCount.addAggregate("COUNT");
+            grEnrollCount.query();
+
+            var total = 0;
+            if (grEnrollCount.next())
+                total = parseInt(grEnrollCount.getAggregate("COUNT"), 10);
+
+            gs.info("[ScheduleUtils] Matrículas válidas no curso " + courseId + ": " + total);
+
+            if (total >= 3) {
+                gs.info("[ScheduleUtils] Curso já atingiu 3 matrículas válidas → ignorada");
+                continue;
+            }
+
+            // ✅ se passou em tudo, adiciona
+            gs.info("[ScheduleUtils] Agenda liberada: " + scheduleNumber);
+            available.push(scheduleId);
         }
 
-        var grSchedules = new GlideRecord("x_1793782_traini_0_schedule");
-        grSchedules.addQuery("state", "2");
-        grSchedules.query();
-
-        while (grSchedules.next()) {
-            if (blockedNumbers.indexOf(grSchedules.number.toString()) == -1) {
-                schedulesToBeShown.push(grSchedules.getUniqueValue());
-            }
-        }
-
-        return schedulesToBeShown.length > 0
-            ? "sys_idIN " + schedulesToBeShown.join(",")
-            : "sys_idIN none";
+        gs.info("[ScheduleUtils] Agendas liberadas: " + available.join(", "));
+        return available.join(",");
     },
 
-    type: 'ScheduleUtils'
+    type: "ScheduleUtils"
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-06 20:15:12</sys_created_on>
         <sys_id>4e4d8473c3d4b610063ffacc05013170</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>ScheduleUtils</sys_name>
         <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
         <sys_update_name>sys_script_include_4e4d8473c3d4b610063ffacc05013170</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-06 22:16:27</sys_updated_on>
+        <sys_updated_on>2025-10-07 13:50:31</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>4e4d8473c3d4b610063ffacc05013170</id>
