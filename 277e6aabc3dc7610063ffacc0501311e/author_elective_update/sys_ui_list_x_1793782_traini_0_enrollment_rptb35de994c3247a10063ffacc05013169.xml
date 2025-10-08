@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_1793782_traini_0_enrollment" version="2" view="RPTb35de994c3247a10063ffacc05013169">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 16:08:52</sys_created_on>
+            <sys_id>335d6118c3247a10063ffacc050131a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 16:08:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 16:08:52</sys_created_on>
+            <sys_id>375d6118c3247a10063ffacc050131a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 16:08:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 16:08:52</sys_created_on>
+            <sys_id>3b5d6118c3247a10063ffacc050131a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 16:08:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opened_by</element>
+            <list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 16:08:52</sys_created_on>
+            <sys_id>3f5d6118c3247a10063ffacc050131a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 16:08:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>schedule</element>
+            <list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 16:08:52</sys_created_on>
+            <sys_id>335d6118c3247a10063ffacc050131a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 16:08:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1793782_traini_0_enrollment</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 16:08:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b75d6118c3247a10063ffacc050131a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1793782_traini_0_enrollment</sys_name>
+            <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+            <sys_update_name>sys_ui_list_x_1793782_traini_0_enrollment_RPTb35de994c3247a10063ffacc05013169</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 16:08:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptb35de994c3247a10063ffacc05013169" name="RPTb35de994c3247a10063ffacc05013169">375d6118c3247a10063ffacc0501319f</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</application>
+        <file_path/>
+        <instance_id>1ddc8f911b0a02507d9d2f8dee4bcb55</instance_id>
+        <instance_name>dev265349</instance_name>
+        <name>sys_ui_list_x_1793782_traini_0_enrollment_RPTb35de994c3247a10063ffacc05013169</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_1793782_traini_0_enrollment" version="2" view="RPTb35de994c3247a10063ffacc05013169"><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>number</element><list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 16:08:52</sys_created_on><sys_id>335d6118c3247a10063ffacc050131a1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 16:08:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>state</element><list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 16:08:52</sys_created_on><sys_id>375d6118c3247a10063ffacc050131a1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 16:08:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_updated_on</element><list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 16:08:52</sys_created_on><sys_id>3b5d6118c3247a10063ffacc050131a1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 16:08:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>opened_by</element><list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 16:08:52</sys_created_on><sys_id>3f5d6118c3247a10063ffacc050131a1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 16:08:52</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>schedule</element><list_id display_value="x_1793782_traini_0_enrollment" element="NULL" name="x_1793782_traini_0_enrollment" parent="NULL" relationship="NULL" sys_domain="global" view="375d6118c3247a10063ffacc0501319f">b75d6118c3247a10063ffacc050131a0</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 16:08:52</sys_created_on><sys_id>335d6118c3247a10063ffacc050131a2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 16:08:52</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_1793782_traini_0_enrollment</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 16:08:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b75d6118c3247a10063ffacc050131a0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1793782_traini_0_enrollment</sys_name><sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package><sys_policy/><sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope><sys_update_name>sys_ui_list_x_1793782_traini_0_enrollment_RPTb35de994c3247a10063ffacc05013169</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 16:08:52</sys_updated_on><sys_user/><view display_value="Rptb35de994c3247a10063ffacc05013169" name="RPTb35de994c3247a10063ffacc05013169">375d6118c3247a10063ffacc0501319f</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>1480152452</payload_hash>
+        <record_name>Enrollment</record_name>
+        <reverted_from/>
+        <source>341143a3c350b610063ffacc0501313e</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 16:08:52</sys_created_on>
+        <sys_id>735d6118c3247a10063ffacc050131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199c49525730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 16:08:52</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>f75d61189d247a10606d67f54ab725a3</update_guid>
+        <update_guid_history>f75d61189d247a10606d67f54ab725a3:1480152452</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 16:26:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>23e46c3d9bb549ee926e24f50bf5e9e4</sys_id>
+        <sys_metadata>b75d6118c3247a10063ffacc050131a0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1793782_traini_0_enrollment</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_parent display_value="Enrollment">c3767627c310b610063ffacc05013158</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_scope_delete display_value="">3bf39d40fbb5444c9b261415aacb2290</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_1793782_traini_0_enrollment_RPTb35de994c3247a10063ffacc05013169</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_1793782_traini_0_enrollment_RPTb35de994c3247a10063ffacc05013169">735d6118c3247a10063ffacc050131a4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 16:26:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

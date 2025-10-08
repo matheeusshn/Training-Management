@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="fae9e9d0c3247a10063ffacc05013136" sys_domain="global" table="x_1793782_traini_0_enrollment" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 15:53:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36e9e9d0c3247a10063ffacc0501313a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1793782_traini_0_enrollment" name="x_1793782_traini_0_enrollment" sys_domain="global" view="Default view">fae9e9d0c3247a10063ffacc05013136</sys_ui_form>
+            <sys_ui_section caption="Enrollment" display_value="Enrollment" name="x_1793782_traini_0_enrollment" sys_domain="global" view="Default view">3ae9a9d0c3247a10063ffacc0501318e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 15:53:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1793782_traini_0_enrollment</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 15:53:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fae9e9d0c3247a10063ffacc05013136</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1793782_traini_0_enrollment</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+            <sys_update_name>sys_ui_form_sections_fae9e9d0c3247a10063ffacc05013136</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 15:53:47</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

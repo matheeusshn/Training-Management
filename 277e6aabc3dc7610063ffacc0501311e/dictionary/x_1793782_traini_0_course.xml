@@ -4,5 +4,14 @@
         <element display="true" label="Name" max_length="100" name="name" type="string"/>
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Description" max_length="4000" name="description" type="string"/>
+        <element choice="1" default="1" label="Integration State" max_length="40" name="integration_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Integrating" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Integration Sucess" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Starting" sequence="0" value="1"/>
+            </choice>
+        </element>
+        <element label="Integration Error Message" max_length="4000" name="integration_error_message" type="string"/>
     </element>
 </database>

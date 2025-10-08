@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Translate API">4b75625cc3287a10063ffacc0501312d</category>
+        <order>300</order>
+        <property display_value="x_1793782_traini_0.active" name="x_1793782_traini_0.active">4d162edcc3287a10063ffacc0501314f</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 20:17:03</sys_created_on>
+        <sys_id>d326e210c3687a10063ffacc05013170</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1793782_traini_0.Active.Translate API</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_d326e210c3687a10063ffacc05013170</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 20:18:09</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

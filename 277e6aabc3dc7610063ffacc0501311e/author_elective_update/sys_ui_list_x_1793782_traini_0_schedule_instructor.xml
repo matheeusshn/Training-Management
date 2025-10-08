@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_1793782_traini_0_schedule" version="2" view="instructor">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_id>a52619d8c3a07a10063ffacc05013158</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>course</element>
+            <list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_id>a92619d8c3a07a10063ffacc05013158</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>instructor</element>
+            <list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_id>ad2619d8c3a07a10063ffacc05013158</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>training_date</element>
+            <list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_id>a12619d8c3a07a10063ffacc05013159</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_id>a52619d8c3a07a10063ffacc05013159</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_id>a92619d8c3a07a10063ffacc05013159</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_id>ad2619d8c3a07a10063ffacc05013159</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1793782_traini_0_schedule</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d2619d8c3a07a10063ffacc05013157</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1793782_traini_0_schedule</sys_name>
+            <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+            <sys_update_name>sys_ui_list_x_1793782_traini_0_schedule_instructor</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+            <sys_user/>
+            <view display_value="Instructor" name="instructor">e4265d98c3a07a10063ffacc050131a2</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</application>
+        <file_path/>
+        <instance_id>1ddc8f911b0a02507d9d2f8dee4bcb55</instance_id>
+        <instance_name>dev265349</instance_name>
+        <name>sys_ui_list_x_1793782_traini_0_schedule_instructor</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_1793782_traini_0_schedule" version="2" view="instructor"><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>number</element><list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_id>a52619d8c3a07a10063ffacc05013158</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>course</element><list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_id>a92619d8c3a07a10063ffacc05013158</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>instructor</element><list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_id>ad2619d8c3a07a10063ffacc05013158</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>training_date</element><list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_id>a12619d8c3a07a10063ffacc05013159</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>state</element><list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_id>a52619d8c3a07a10063ffacc05013159</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_created_by</element><list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_id>a92619d8c3a07a10063ffacc05013159</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_updated_on</element><list_id display_value="x_1793782_traini_0_schedule" element="NULL" name="x_1793782_traini_0_schedule" parent="NULL" relationship="NULL" sys_domain="global" view="e4265d98c3a07a10063ffacc050131a2">2d2619d8c3a07a10063ffacc05013157</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_id>ad2619d8c3a07a10063ffacc05013159</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_1793782_traini_0_schedule</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-10-08 14:27:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2d2619d8c3a07a10063ffacc05013157</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1793782_traini_0_schedule</sys_name><sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package><sys_policy/><sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope><sys_update_name>sys_ui_list_x_1793782_traini_0_schedule_instructor</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-10-08 14:27:24</sys_updated_on><sys_user/><view display_value="Instructor" name="instructor">e4265d98c3a07a10063ffacc050131a2</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>1307263899</payload_hash>
+        <record_name>Schedule</record_name>
+        <reverted_from/>
+        <source>341143a3c350b610063ffacc0501313e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 14:27:24</sys_created_on>
+        <sys_id>e52619d8c3a07a10063ffacc0501315c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199c4383ed70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 14:27:24</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>6d2619d80aa07a10e8e175de55753e5b</update_guid>
+        <update_guid_history>6d2619d80aa07a10e8e175de55753e5b:1307263899,e02619d8d8a07a108432fc10235eb212:1582261534</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-08 14:30:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>88b71f3e6809450091c748eb6e290100</sys_id>
+        <sys_metadata>2d2619d8c3a07a10063ffacc05013157</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1793782_traini_0_schedule</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_parent display_value="Schedule">e271b2afc3dc7610063ffacc050131ef</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_scope_delete display_value="">3bf39d40fbb5444c9b261415aacb2290</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_1793782_traini_0_schedule_instructor</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_1793782_traini_0_schedule_instructor">e52619d8c3a07a10063ffacc0501315c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-08 14:30:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

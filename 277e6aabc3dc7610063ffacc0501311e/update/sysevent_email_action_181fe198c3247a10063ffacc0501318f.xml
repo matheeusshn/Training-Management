@@ -5,7 +5,7 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Training Management" name="Training Management">9f0580f7c394b610063ffacc05013193</category>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_1793782_traini_0_enrollment</collection>
         <condition/>
         <content_type>text/html</content_type>
@@ -36,46 +36,37 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<h2 style="color: #2e8b57;">✅ Training Enrollment Confirmation!</h2>
-<p>&nbsp;</p>
-<p>Hello ${requester.name},</p>
-<p>Your enrollment request for <strong>${schedule.short_description}</strong>&nbsp;has been successfully received and is now <strong>Awaiting approval</strong> from your manager.</p>
-<p>Once your manager reviews your request, you will receive another email confirming whether your participation was <strong>approved</strong> or <strong>rejected</strong>.</p>
-<p>&nbsp;</p>
-<hr>
-<p>&nbsp;</p>
-<p>Thank you for participating in our training program!<br>&mdash; Training Management&nbsp;Team</p>
-<p>&nbsp;</p>]]></message_html>
+        <message_html/>
         <message_list/>
         <message_text/>
-        <name>Training Enrollment Received</name>
+        <name>Enrollment List</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>opened_by</recipient_fields>
+        <recipient_fields>schedule.instructor</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Training Enrollment Received - Awaiting Approval</subject>
+        <subject/>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-06 19:16:24</sys_created_on>
+        <sys_created_on>2025-10-08 16:16:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0cf4ccb7c394b610063ffacc050131fe</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Training Enrollment Received</sys_name>
+        <sys_id>181fe198c3247a10063ffacc0501318f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Enrollment List</sys_name>
         <sys_overrides/>
         <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
-        <sys_update_name>sysevent_email_action_0cf4ccb7c394b610063ffacc050131fe</sys_update_name>
+        <sys_update_name>sysevent_email_action_181fe198c3247a10063ffacc0501318f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-08 13:05:11</sys_updated_on>
+        <sys_updated_on>2025-10-08 16:17:21</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
