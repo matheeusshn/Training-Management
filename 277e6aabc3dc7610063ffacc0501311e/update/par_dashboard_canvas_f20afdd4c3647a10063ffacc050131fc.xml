@@ -2,14 +2,14 @@
     <par_dashboard_canvas action="INSERT_OR_UPDATE">
         <dashboard display_value="Training Management">360a3994c3647a10063ffacc0501316a</dashboard>
         <dashboard_tab/>
-        <layout>[]</layout>
+        <layout>[{"sys_id":"082f6001c360b210063ffacc05013150","x":9,"y":0,"w":38,"h":7,"component_id":"1f6e0643eca7a637e36bd7833549ec9e","component_props":"{\"variant\":\"header-primary\",\"label\":\"Dashboard for monitoring trainings, courses, instructors schedules and key metrics\",\"wontWrap\":false,\"hasNoMargin\":false,\"level\":\"1\",\"id\":\"label\",\"value\":\"Dashboard for monitoring trainings, courses, instructors schedules and key metrics\",\"noDebounce\":true,\"propLabel\":\"Label\"}","can_edit":true},{"sys_id":"4c2f6001c360b210063ffacc0501314d","x":1,"y":0,"w":8,"h":7,"component_id":"15fe506403f8a98575b6df59008ea8f1","component_props":"{\"src\":\"upload_writing.png\",\"sources\":\"[]\",\"fit\":\"fill\",\"position\":\"center center\",\"width\":120,\"height\":120,\"alt\":\"\",\"href\":\"https://www.servicenow.com/\",\"configAria\":\"{\\\"link\\\":{}}\",\"id\":\"fit\",\"value\":\"fill\",\"propLabel\":\"Fit\"}","can_edit":true}]</layout>
         <sys_class_name>par_dashboard_canvas</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-08 17:04:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f20afdd4c3647a10063ffacc050131fc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
@@ -17,6 +17,6 @@
         <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
         <sys_update_name>par_dashboard_canvas_f20afdd4c3647a10063ffacc050131fc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-08 17:04:14</sys_updated_on>
+        <sys_updated_on>2025-10-10 19:32:22</sys_updated_on>
     </par_dashboard_canvas>
 </record_update>

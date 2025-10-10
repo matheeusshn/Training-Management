@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_related sys_domain="global" table="x_1793782_traini_0_schedule" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
+            <filter table="x_1793782_traini_0_enrollment.schedule">state!=4^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            </filter>
             <list_id display_value="Schedule - Default view" name="x_1793782_traini_0_schedule" related_list="NULL" sys_domain="global" view="Default view">e525348cc32cf610063ffacc0501318b</list_id>
             <order_by/>
             <position/>
@@ -10,9 +11,9 @@
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-10-07 17:24:44</sys_created_on>
             <sys_id>a925348cc32cf610063ffacc0501318d</sys_id>
-            <sys_mod_count>8</sys_mod_count>
+            <sys_mod_count>9</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-10-10 15:00:33</sys_updated_on>
+            <sys_updated_on>2025-10-10 17:22:19</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Schedule - Default view</calculated_name>

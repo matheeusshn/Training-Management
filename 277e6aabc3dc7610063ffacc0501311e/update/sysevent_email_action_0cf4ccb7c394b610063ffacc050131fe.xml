@@ -52,7 +52,7 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>opened_by</recipient_fields>
+        <recipient_fields>requester</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
@@ -67,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0cf4ccb7c394b610063ffacc050131fe</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Training Enrollment Received</sys_name>
         <sys_overrides/>
         <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
@@ -75,7 +75,7 @@
         <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
         <sys_update_name>sysevent_email_action_0cf4ccb7c394b610063ffacc050131fe</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-08 13:05:11</sys_updated_on>
+        <sys_updated_on>2025-10-10 17:37:07</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
