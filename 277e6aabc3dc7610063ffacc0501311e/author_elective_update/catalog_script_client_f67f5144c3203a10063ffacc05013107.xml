@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Training Enrollment">24ddafabc314b610063ffacc050131c2</cat_item>
+        <cat_variable>IO:23a0bbafc314b610063ffacc05013136</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>ScheduleList</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') return;
+
+    var ga = new GlideAjax('ScheduleUtils');
+    ga.addParam('sysparm_name', 'getAvailableSchedules');
+    ga.addParam('sysparm_schedule', newValue);
+
+    ga.getXMLAnswer(function(response) {
+        var msg = '';
+        switch (response) {
+            case 'instructor':
+                msg = 'You are the instructor of this schedule and cannot enroll.';
+                break;
+            case 'duplicate':
+                msg = 'You already have an active enrollment for this schedule.';
+                break;
+            case 'course_limit':
+                msg = 'You have reached the limit of 3 enrollments for this course.';
+                break;
+            case 'no_seats':
+                msg = 'This schedule is full.';
+                break;
+            case 'deadline':
+                msg = 'The enrollment deadline has passed (only until one day before the training).';
+                break;
+            case 'false':
+                msg = 'Error while validating this schedule. Please try again.';
+                break;
+        }
+
+        if (msg !== '') {
+            g_form.showFieldMsg('schedule', msg, 'error');
+            g_form.setValue('schedule', '');
+        } else {
+            g_form.hideFieldMsg('schedule', true);
+        }
+    });
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 20:30:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f67f5144c3203a10063ffacc05013107</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>ScheduleList</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_update_name>catalog_script_client_f67f5144c3203a10063ffacc05013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 14:14:52</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_es_latest_script action="DELETE">
+        <id>f67f5144c3203a10063ffacc05013107</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-07 20:30:31</sys_created_on>
+        <sys_id>b2afd9c0c3203a10063ffacc0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-07 20:30:31</sys_updated_on>
+        <table>catalog_script_client</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</application>
+        <file_path/>
+        <instance_id>1ddc8f911b0a02507d9d2f8dee4bcb55</instance_id>
+        <instance_name>dev265349</instance_name>
+        <name>catalog_script_client_f67f5144c3203a10063ffacc05013107</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Training Enrollment"&gt;24ddafabc314b610063ffacc050131c2&lt;/cat_item&gt;&lt;cat_variable&gt;IO:23a0bbafc314b610063ffacc05013136&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;ScheduleList&lt;/name&gt;&lt;order/&gt;&lt;published_ref/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') return;
+
+    var ga = new GlideAjax('ScheduleUtils');
+    ga.addParam('sysparm_name', 'getAvailableSchedules');
+    ga.addParam('sysparm_schedule', newValue);
+
+    ga.getXMLAnswer(function(response) {
+        var msg = '';
+        switch (response) {
+            case 'instructor':
+                msg = 'You are the instructor of this schedule and cannot enroll.';
+                break;
+            case 'duplicate':
+                msg = 'You already have an active enrollment for this schedule.';
+                break;
+            case 'course_limit':
+                msg = 'You have reached the limit of 3 enrollments for this course.';
+                break;
+            case 'no_seats':
+                msg = 'This schedule is full.';
+                break;
+            case 'deadline':
+                msg = 'The enrollment deadline has passed (only until one day before the training).';
+                break;
+            case 'false':
+                msg = 'Error while validating this schedule. Please try again.';
+                break;
+        }
+
+        if (msg !== '') {
+            g_form.showFieldMsg('schedule', msg, 'error');
+            g_form.setValue('schedule', '');
+        } else {
+            g_form.hideFieldMsg('schedule', true);
+        }
+    });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-10-07 20:30:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f67f5144c3203a10063ffacc05013107&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;ScheduleList&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Training Management" source="x_1793782_traini_0"&gt;277e6aabc3dc7610063ffacc0501311e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Training Management"&gt;277e6aabc3dc7610063ffacc0501311e&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_f67f5144c3203a10063ffacc05013107&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-10-09 14:14:52&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;va_supported&gt;true&lt;/va_supported&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;f67f5144c3203a10063ffacc05013107&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-10-07 20:30:31&lt;/sys_created_on&gt;&lt;sys_id&gt;b2afd9c0c3203a10063ffacc0501319d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-10-07 20:30:31&lt;/sys_updated_on&gt;&lt;table&gt;catalog_script_client&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1115248568</payload_hash>
+        <record_name>ScheduleList</record_name>
+        <reverted_from/>
+        <source>341143a3c350b610063ffacc0501313e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 14:14:52</sys_created_on>
+        <sys_id>6fdc52a8c3a03210063ffacc05013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>199c95321e90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 14:14:52</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>e3dc52a8e5a0321087ad135584b03904</update_guid>
+        <update_guid_history>e3dc52a8e5a0321087ad135584b03904:-1115248568,f45de1c4c6603a102c3b7c20e79cbef1:-1388406011,2c0721cce9203a10a381aad7d43dfe2c:1570755111,61d5694cef203a10b028715600a2cc04:752260180,5e04a1c80d203a1029efcff382e8a342:1570755111,c7d3ad8809203a10b47de2918c684217:788241099,9fc32d8857203a1023cb78c664f0cf9f:1128430411,2430a18444203a108addc5dab98ce7ce:-476832537,35bf554492203a10e8e85dcb54b9b1d6:-1813676773,cbaf15441a203a10d9aed288a63790c4:-1473487461</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ScheduleList">93816facc3e43210063ffacc050131c4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-09 19:14:57</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>34a1ecfe870d4420ac7cd37fe4c87100</sys_id>
+        <sys_metadata>f67f5144c3203a10063ffacc05013107</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScheduleList</sys_name>
+        <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
+        <sys_scope_delete display_value="">3bf39d40fbb5444c9b261415aacb2290</sys_scope_delete>
+        <sys_update_name>catalog_script_client_f67f5144c3203a10063ffacc05013107</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_f67f5144c3203a10063ffacc05013107">6fdc52a8c3a03210063ffacc05013104</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-09 19:14:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

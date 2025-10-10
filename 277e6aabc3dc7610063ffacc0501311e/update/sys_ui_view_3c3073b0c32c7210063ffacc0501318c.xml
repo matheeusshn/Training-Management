@@ -6,16 +6,16 @@
         <roles/>
         <sys_class_name>sys_ui_view</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-10-08 14:30:31</sys_created_on>
-        <sys_id>cfd61d98c3a07a10063ffacc050131c2</sys_id>
+        <sys_created_on>2025-10-10 14:57:26</sys_created_on>
+        <sys_id>3c3073b0c32c7210063ffacc0501318c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Instructor</sys_name>
         <sys_package display_value="Training Management" source="x_1793782_traini_0">277e6aabc3dc7610063ffacc0501311e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Training Management">277e6aabc3dc7610063ffacc0501311e</sys_scope>
-        <sys_update_name>sys_ui_view_cfd61d98c3a07a10063ffacc050131c2</sys_update_name>
+        <sys_update_name>sys_ui_view_3c3073b0c32c7210063ffacc0501318c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-08 14:30:31</sys_updated_on>
+        <sys_updated_on>2025-10-10 14:57:26</sys_updated_on>
         <title>Instructor</title>
         <user/>
     </sys_ui_view>
